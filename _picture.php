@@ -25,7 +25,7 @@ $daysPassed  = $dateNow->diff($waitStart)->format("%a");
 $daysLeft    = $dateNow->diff($waitEnd)->format("%a");
 $daysBetween = $waitStart->diff($waitEnd)->format("%a");
 
-// Set to 0 if negative
+// Get percentage to tweet
 $percentage = floor($daysPassed / $daysBetween * 100);
 $realPerc = $daysPassed / $daysBetween * 100;
 
